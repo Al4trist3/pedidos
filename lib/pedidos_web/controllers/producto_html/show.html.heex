@@ -1,0 +1,20 @@
+<.header>
+  Producto <%= @producto.id %>
+  <:subtitle>Este es un registro de un producto en la base de datos.</:subtitle>
+  <:actions>
+    <.link href={~p"/productos/#{@producto}/edit"}>
+      <.button>Editar producto</.button>
+    </.link>
+    <.link href={~p"/carrito_items?producto_id=#{@producto.id}"} method="post">
+      <.button>Agregar al carrito</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Titulo"><%= @producto.titulo %></:item>
+  <:item title="Stock"><%= @producto.stock %></:item>
+  <:item title="Precio"><%= @producto.precio %></:item>
+</.list>
+
+<.back navigate={~p"/productos"}>Volver a productos</.back>

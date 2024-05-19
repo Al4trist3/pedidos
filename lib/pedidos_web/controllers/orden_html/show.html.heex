@@ -1,0 +1,19 @@
+<.header>
+  Pedido creado!
+  <:subtitle>
+     <strong>User uuid: </strong><%= @orden.user_uuid %>
+  </:subtitle>
+</.header>
+
+<.table id="items" rows={@orden.linea_items}>
+  <:col :let={item} label="Titulo"><%= item.producto.titulo %></:col>
+  <:col :let={item} label="Cantidad"><%= item.cantidad %></:col>
+  <:col :let={item} label="Precio">
+    <%= PedidosWeb.CarritoHTML.currency_to_str(item.precio) %>
+  </:col>
+</.table>
+
+<strong>Total:</strong>
+<%= PedidosWeb.CarritoHTML.currency_to_str(@orden.precio_total) %>
+
+<.back navigate={~p"/productos"}>Volves a productos</.back>

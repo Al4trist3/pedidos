@@ -1,0 +1,8 @@
+<.header>
+  Nuevo producto
+  <:subtitle>Use este formulario para crear un producto en la base de datos.</:subtitle>
+</.header>
+
+<.producto_form changeset={@changeset} action={~p"/productos"} />
+
+<.back navigate={~p"/productos"}>Volver a productos</.back>

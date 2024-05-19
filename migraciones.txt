@@ -1,0 +1,11 @@
+mix phx.gen.html Catalogo Producto productos titulo:string stock:integer precio:decimal
+
+mix phx.gen.context CarritoDeCompras Carrito carritos user_uuid:uuid:unique
+
+
+mix phx.gen.context CarritoDeCompras CarritoItem carrito_items carrito_id:references:carritos producto_id:references:productos precio_en_carrito:decimal cantidad:integer
+
+mix phx.gen.context Ordenes Orden ordenes user_uuid:uuid precio_total:decimal
+
+
+mix phx.gen.context Ordenes LineaItem orden_linea_items precio:decimal cantidad:integer orden_id:references:ordenes producto_id:references:productos

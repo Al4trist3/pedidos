@@ -1,0 +1,8 @@
+<.header>
+  Edit Producto <%= @producto.id %>
+  <:subtitle>Editar producto.</:subtitle>
+</.header>
+
+<.producto_form changeset={@changeset} action={~p"/productos/#{@producto}"} />
+
+<.back navigate={~p"/productos"}>Volver a productos</.back>

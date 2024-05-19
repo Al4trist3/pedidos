@@ -1,0 +1,13 @@
+<.simple_form :let={f} for={@changeset} action={@action}>
+  <.error :if={@changeset.action}>
+    Oops, something went wrong! Please check the errors below.
+  </.error>
+  <.input field={f[:titulo]} type="select" value={"Titulo"}
+    options={["Medialuna", "Cafe", "Submarino", "Tostada", "Te"]}>
+  </.input>
+  <.input field={f[:stock]} type="number" label="Stock" step="any" min="1" />
+  <.input field={f[:precio]} type="number" label="Precio" step="any" min="0"/>
+  <:actions>
+    <.button>Guardar Producto</.button>
+  </:actions>
+</.simple_form>

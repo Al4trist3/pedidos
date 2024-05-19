@@ -1,0 +1,10 @@
+0000000000000000000000000000000000000000 140ba52b207d69b13fb20b3de7c7c9bceae31c15 Eugenio Bayot <alatriste@localhost.localdomain> 1715975406 -0300	commit (initial): Initial commit
+140ba52b207d69b13fb20b3de7c7c9bceae31c15 18cf13e7732c2dc2acb3b9f02af2c437272361f6 Eugenio Bayot <alatriste@localhost.localdomain> 1715975510 -0300	commit (amend): Initial commit
+18cf13e7732c2dc2acb3b9f02af2c437272361f6 f9942f4cfe69ba715b2b622e6bec835c5e67af65 Eugenio Bayot <alatriste@localhost.localdomain> 1715975585 -0300	commit (amend): Initial commit
+f9942f4cfe69ba715b2b622e6bec835c5e67af65 e7f94f1433672ef2f82b3fd3461aad76e556576e Eugenio Bayot <alatriste@localhost.localdomain> 1715975616 -0300	commit (amend): reset autor
+e7f94f1433672ef2f82b3fd3461aad76e556576e 31fd5c114da9b340c600c2853a5cee208275039e Eugenio Bayot <alatriste@localhost.localdomain> 1715976479 -0300	commit: set elixir, erlang, and node version
+31fd5c114da9b340c600c2853a5cee208275039e c40265e87ba88657630f132fb48e05a5c5bd9d0b Eugenio Bayot <alatriste@localhost.localdomain> 1715976587 -0300	commit: assets deploy script
+c40265e87ba88657630f132fb48e05a5c5bd9d0b 2b682b8da25ea73ba1bc5613bcb01c0db6bd346c Eugenio Bayot <alatriste@localhost.localdomain> 1715979673 -0300	commit: borra producto cuando se usa todo el stock
+2b682b8da25ea73ba1bc5613bcb01c0db6bd346c f5d756ac42da49908b68c9c0e9f40b1958e8816b Eugenio Bayot <alatriste@localhost.localdomain> 1715987533 -0300	commit: arreglando bug stock 0
+f5d756ac42da49908b68c9c0e9f40b1958e8816b 4364e4d759e4bdd10e745b92be3d98f27b0dbe3b Eugenio Bayot <alatriste@localhost.localdomain> 1716146942 -0300	checkout: moving from master to main
+4364e4d759e4bdd10e745b92be3d98f27b0dbe3b f5d756ac42da49908b68c9c0e9f40b1958e8816b Eugenio Bayot <alatriste@localhost.localdomain> 1716147007 -0300	checkout: moving from main to master

@@ -1,0 +1,30 @@
+<%= if @carrito.items == [] do %>
+  <.header>
+    Mi Carrito
+    <:subtitle>El carrito esta vacio</:subtitle>
+  </.header>
+<% else %>
+  <.header>
+    My Carrito
+    <:actions>
+      <.link href={~p"/ordenes"} method="post">
+        <.button>Completar pedido</.button>
+      </.link>
+    </:actions>
+  </.header>
+
+  <.simple_form :let={f} for={@changeset} action={~p"/carrito"}>
+    <.inputs_for :let={item_form} field={f[:items]}>
+	<% item = item_form.data %>
+      <.input field={item_form[:cantidad]} type="number" min="1" max={item.producto.stock} label={item.producto.titulo} />
+      <%= currency_to_str(CarritoDeCompras.total_item_price(item)) %>
+    </.inputs_for>
+    <:actions>
+      <.button>Actualizar carrito</.button>
+    </:actions>
+  </.simple_form>
+
+  <b>Total</b>: <%= currency_to_str(CarritoDeCompras.total_cart_price(@carrito)) %>
+<% end %>
+
+<.back navigate={~p"/productos"}>Volver a productos</.back>
